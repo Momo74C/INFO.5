@@ -33,6 +33,9 @@ input[type=submit]:hover {
 }
 
 img {
-    width: 30%;
-    text-align: center;
+  position:absolute;
+  bottom: 30px;
+  right: 500px;
+  width: 30%;
+  border: 3px solid #73AD21;
 }
