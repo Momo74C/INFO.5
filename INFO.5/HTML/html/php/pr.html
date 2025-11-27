@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <h2>Somma</h2>
+  <head>
+    <meta charset="utf-8">
+    <title>Calcolatrice</title>
+  </head>
+  <body>
+    <h2>Calcolatrice</h2>
 
-  <form action="somma.php" method="post">
-    <label for="primonumero">Numero 1</label>
-    <input type="number" name="primonumero" placeholder="Inserisci il primo numero.."><br>
+    <form action="calcolo.php" method="post">
+      <label for="primonumero">Numero 1</label>
+      <input type="number" step="any" name="primonumero" placeholder="Inserisci il primo numero.."><br>
 
-    <label for="secondonumero">Numero 2</label>
-    <input type="number" name="secondonumero" placeholder="Inserisci il secondo numero.."><br>
+      <label for="secondonumero">Numero 2</label>
+      <input type="number" step="any" name="secondonumero" placeholder="Inserisci il secondo numero.."><br>
 
-    <input type="submit" value="Calcola">
-  </form>
+      <label for="operazione">Operazione</label>
+      <select name="operazione">
+        <option value="somma">Somma (+)</option>
+        <option value="differenza">Differenza (-)</option>
+        <option value="prodotto">Prodotto (×)</option>
+        <option value="divisione">Divisione (÷)</option>
+      </select>
+
+      <br><br>
+      <input type="submit" value="Calcola">
+    </form>
+  </body>
 </html>
