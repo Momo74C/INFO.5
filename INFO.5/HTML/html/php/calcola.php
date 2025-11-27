@@ -2,7 +2,6 @@
 
 $R = $_POST['primonumero'];
 $S = $_POST['secondonumero'];
-
 $op = $_POST['operazione'];
 
 switch ($op) {
