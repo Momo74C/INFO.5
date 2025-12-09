@@ -25,7 +25,8 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        echo "Nome: " . $row["nome"]. " - Cognome: " . $row["cognome"]. " - Voto: " . $row["voto"]. "<br>";
+       echo "<div class='result'>Nome: " . $row["nome"]. " - Cognome: " . $row["cognome"]. " - Voto: " . $row["voto"]. "</div>";
+
     }
 } else {
     echo "Nessun risultato trovato.";
