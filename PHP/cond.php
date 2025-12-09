@@ -30,17 +30,27 @@ switch ($co) {
 
 $result = $conn->query($sql);
 
-if ($result === false) {
-    die("Errore nella query: " . $conn->error);
+if ($result->num_rows > 0) {
+    echo "<table border='1' cellpadding='8' cellspacing='0' style='margin:20px auto; border-collapse:collapse;'>";
+    echo "<tr style='background-color:#2980b9; color:white;'>
+            <th>Nome</th>
+            <th>Cognome</th>
+            <th>Voto</th>
+          </tr>";
+
+    while($row = $result->fetch_assoc()) {
+        echo "<tr>
+                <td>" . $row["nome"] . "</td>
+                <td>" . $row["cognome"] . "</td>
+                <td>" . $row["voto"] . "</td>
+              </tr>";
+    }
+
+    echo "</table>";
+} else {
+    echo "<p style='text-align:center; color:red;'>Nessun risultato trovato.</p>";
 }
 
-if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
-        echo "Nome: " . $row["nome"]. " - Cognome: " . $row["cognome"]. " - Voto: " . $row["voto"]. "<br>";
-    }
-} else {
-    echo "Nessun risultato trovato.";
-}
 
 
 $conn->close();
