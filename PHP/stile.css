@@ -71,17 +71,3 @@ table {
     font-family: Arial, sans-serif;
 }
 
-th, td {
-    padding: 10px;
-    text-align: center;
-    border: 1px solid #ccc;
-}
-
-th {
-    background-color: #2980b9;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #f2f2f2;
-}

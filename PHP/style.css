@@ -77,3 +77,18 @@ input[type="submit"]:hover {
     font-size: 15px;
     line-height: 1.6;
 }
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
