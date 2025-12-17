@@ -22,7 +22,7 @@ switch ($co) {
                 WHERE v.voto = 10";
         break;
     case 'Cognome simili':
-        $sql = "SELECT * FROM studenti WHERE cognome LIKE '%elshourbgy%'";
+        $sql = "SELECT * FROM studenti WHERE cognome LIKE '%dsfasfa%'";
         break;
     default:
         die("Condizione non valida.");
