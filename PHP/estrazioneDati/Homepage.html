@@ -1,20 +1,49 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Gestione Database</title>
-    <link rel="stylesheet" href="stilericetta.css">
-  </head>
-  <body>
-    <div id="header">
-        <h1 id="titolo">RICETTARIO DELLA CUCINA SRI LANKESE</h1>
-        <p id="sottotitolo">HOME </p>
-    </div>
-
-    <div id="link">
-        <a href="kottu.html">kottu</a><br>
-        <a href="watalappan.html">watalappan</a><br>   
-        <p> Buon appetito! </p>
-    </div>
-    <img src="https://cdn.pixabay.com/photo/2021/06/15/01/30/new-6337180_1280.jpg" width="500" >
-  </body>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Homepage Funzioni</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      /* Sfondo sfumato */
+      background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+      text-align: center;
+      padding: 50px;
+      min-height: 100vh; /* copre tutta la pagina */
+      margin: 0;
+    }
+    h1 {
+      color: #fff;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    .menu {
+      margin-top: 30px;
+    }
+    .menu a {
+      display: block;
+      margin: 15px auto;
+      padding: 12px 20px;
+      background-color: rgba(0, 123, 255, 0.9);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      width: 250px;
+      font-weight: bold;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      transition: transform 0.2s, background-color 0.3s;
+    }
+    .menu a:hover {
+      background-color: rgba(0, 86, 179, 0.9);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Homepage - Funzioni disponibili</h1>
+  <div class="menu">
+    <a href="insert_studente/insert.html">Inserimento Studente</a>
+    <a href="gestione_database/xond.html">Gestione Studenti</a>
+  </div>
+</body>
 </html>
